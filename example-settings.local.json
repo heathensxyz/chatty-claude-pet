@@ -1,0 +1,81 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bunx --bun @open-pets/claude-pets@0.1.0 hook"
+          },
+          {
+            "type": "command",
+            "command": "~/bin/openpets-say.sh thinking \"On it!\" \"Let me think...\" \"Hmm, interesting.\" \"One moment...\" \"Challenge accepted.\" \"Hold my coffee.\" \"Let me put on my smart glasses.\" \"Engaging turbo mode.\" \"My pet senses are tingling.\""
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bunx --bun @open-pets/claude-pets@0.1.0 hook"
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bunx --bun @open-pets/claude-pets@0.1.0 hook"
+          },
+          {
+            "type": "command",
+            "command": "~/bin/openpets-notify.sh"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bunx --bun @open-pets/claude-pets@0.1.0 hook"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bunx --bun @open-pets/claude-pets@0.1.0 hook"
+          },
+          {
+            "type": "command",
+            "command": "~/bin/openpets-say.sh success \"All done!\" \"Nailed it.\" \"Done and done.\" \"Chef's kiss.\" \"Another happy customer.\" \"Mic drop.\" \"Adding that to my resume.\" \"Crushed it. No big deal.\""
+          }
+        ]
+      }
+    ],
+    "StopFailure": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bunx --bun @open-pets/claude-pets@0.1.0 hook"
+          },
+          {
+            "type": "command",
+            "command": "~/bin/openpets-say.sh error \"Uh oh, something went wrong.\" \"Well that was unexpected.\" \"I blame the gremlins.\" \"Error 404: success not found.\" \"Plot twist!\" \"I promise I'm usually better than this.\""
+          }
+        ]
+      }
+    ]
+  }
+}
