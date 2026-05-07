@@ -132,6 +132,11 @@ Currently macOS only. The scripts use Unix domain sockets (`/tmp/openpets-{uid}/
 
 You can replace the default pet with one that looks like your actual dog, cat, or whatever you want. This section covers the sprite sheet format and a Python-based recolor workflow that turns an existing pet into a custom one.
 
+<p align="center">
+  <img src="screenshots/hendo-desktop.png" width="200" alt="Hendo on the desktop with speech bubble">
+  <img src="screenshots/hendo-frisbee-catch.gif" width="200" alt="Hendo catching a frisbee">
+</p>
+
 ### The Sprite Sheet Format
 
 Every pet is two files in a folder:
@@ -324,6 +329,10 @@ States: `idle`, `thinking`, `working`, `editing`, `running`, `testing`, `waiting
 ### Example: Hendo
 
 See [`examples/`](examples/) for a working custom pet built by recoloring the shiba sprite sheet to match a pair of Belgian Malinois. The result: dark ears, warm face mask, fawn body, dark tail tip, and a frisbee catch in the jumping animation.
+
+<p align="center">
+  <img src="screenshots/hendo-spritesheet-detail.png" width="600" alt="Hendo jumping animation frames with frisbee">
+</p>
 
 ---
 
