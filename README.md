@@ -80,6 +80,8 @@ openpets-say.sh <state> "message 1" "message 2" "message 3" ...
 
 The script picks one message at random each time. States control the pet's animation: `thinking`, `success`, `error`, `waiting`.
 
+**Let Claude do it for you:** This repo includes a `CLAUDE.md` that teaches Claude Code how to personalize your pet's messages. If you clone this repo into a project directory (or copy `CLAUDE.md` into your project), just ask Claude to "personalize my pet's speech" and it will rewrite the message pools in your `settings.local.json` to match your personality.
+
 ## How it works
 
 ```
