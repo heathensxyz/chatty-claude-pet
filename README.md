@@ -2,6 +2,13 @@
 
 Make your [OpenPets](https://github.com/anthropics/open-pets) desktop pet talk automatically when Claude Code events fire, with zero token cost.
 
+<p align="center">
+  <img src="screenshots/crystal-ball.png" width="160" alt="Consulting my crystal ball...">
+  <img src="screenshots/chefs-kiss.png" width="160" alt="Chef's kiss.">
+  <img src="screenshots/blame-gremlins.png" width="160" alt="I blame the gremlins.">
+  <img src="screenshots/not-to-brag.png" width="160" alt="Not to brag, but... okay, bragging.">
+</p>
+
 By default, the `@open-pets/claude-pets` hooks update the pet's animation state (thinking, editing, celebrating) but don't trigger speech bubbles. Speech only happens when the AI explicitly calls `openpets_say` via MCP, which costs tokens and depends on the model remembering to do it.
 
 This project adds two shell scripts that send randomized speech bubbles directly over the OpenPets IPC socket, bypassing the MCP server entirely. The pet talks at key moments on its own, no AI involvement required.
